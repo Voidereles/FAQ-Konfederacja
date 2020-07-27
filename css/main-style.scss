@@ -1,0 +1,467 @@
+$text-size-big: 1.25rem;
+$text-size-huge:3rem;
+$text-size-huge-2:4rem;
+$text-size-big-2:1.5rem;
+$text-size-small:0.875rem;
+
+$grey-1:#ededed;
+$confederate-blue: #173358;
+$confederate-blue-darker:#0B213D;
+$confederate-green:#007008;
+$confederate-red:#A4161A;
+
+body {
+    font-family: 'Montserrat', 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    background-color: $confederate-blue-darker;
+}
+
+h2,
+h4 {
+    font-size: $text-size-huge-2;
+    color: $confederate-blue-darker;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: $text-size-big-2;
+}
+
+.container-fluid {
+    width: 1300px;
+    max-width: 100%;
+}
+
+.header {
+    background-image: url('../images/people-konf\ 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(23, 51, 88, 0.8) 0%, #173358 100%);
+        width: 100%;
+        height: 101%;
+    }
+
+    &__logo {
+        width: 365px;
+    }
+
+
+    &__heading {
+        position: relative;
+        color: $grey-1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../images/Podkreślenie.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 120%;
+            height: 13px;
+            bottom: 0.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+
+    }
+
+    &__h1 {
+        font-size: $text-size-big;
+        position: relative;
+        font-weight: bold;
+    }
+
+    &__numbers {
+        color: $grey-1;
+        text-align: center;
+        max-width: 100%;
+
+        &>div {
+            width: 15rem;
+            height: 9rem;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 40px 10px;
+        }
+
+        &-facts {
+            background: linear-gradient(180deg, rgba(0, 219, 16, 0.84) 0%, #007008 100%);
+            box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.25);
+        }
+
+        &-myths {
+            background: linear-gradient(180deg, rgba(243, 32, 38, 0.78) 0%, #A4161A 100%);
+            box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.25);
+        }
+
+        &-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        &-number {
+            font-size: $text-size-huge;
+            font-weight: bold;
+            line-height: 3rem;
+        }
+    }
+
+
+}
+
+.search {
+    padding: 2rem 3rem;
+    background-color: $confederate-blue-darker;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    &__heading {
+        color: $grey-1;
+        font-size: initial;
+        font-weight: bold;
+    }
+
+    &__input {
+        padding: 0.75rem 1.5rem;
+        height: 40px;
+        background-color: hsla(0, 0%, 93%, 0.151);
+        border-radius: 100px;
+        width: 700px;
+        max-width: calc(100% - 3.5rem);
+        outline: none;
+        box-shadow: none;
+        border: none;
+        color: white;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    &__submit {
+        border-radius: 50%;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        transition: 0.2s;
+
+        svg,
+        path {
+            transition: 0.2s;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        &:hover {
+            // background-color: $grey-1;
+
+            background-color: hsla(0, 0%, 93%, 0.151);
+
+            svg {
+                transform: scale(0.8);
+            }
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &__tag {
+        border-radius: 100px;
+        background: $grey-1;
+        color: $confederate-blue;
+        border: 2px solid $confederate-blue;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        padding: 0.25rem 1rem;
+        transition: 0.2s;
+        margin-right: 0.5rem;
+        font-size: $text-size-small;
+
+        &:hover {
+            text-decoration: none;
+            border: 2px solid $confederate-blue;
+            background-color: transparent;
+            color: $grey-1;
+        }
+
+    }
+
+    &__hero-container {
+        background-color: $confederate-blue;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+}
+
+.main {
+    background: $grey-1;
+}
+
+.articles {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+        grid-gap: 1.5rem;
+        grid-auto-flow: dense;
+        list-style: none;
+        margin: 1em auto;
+        padding: 0;
+    }
+}
+
+.new-articles {
+    &__read-all {
+        &:hover {
+            color: $confederate-blue-darker;
+        }
+    }
+}
+
+.article-ref {
+    background: darken($color: $grey-1, $amount: 3%);
+    box-shadow: 0px 4px 4px rgba(23, 51, 88, 0.2);
+    border: 1px solid transparent;
+    border-radius: 24px;
+    padding: 2rem;
+    color: $confederate-blue-darker;
+    display: block;
+    transition: 0.2s;
+
+    &:hover {
+        outline: none;
+        text-decoration: none;
+        color: $confederate-blue-darker;
+        box-shadow: none;
+        border: 1px solid rgba(186, 185, 185, 0.9);
+        background: $grey-1;
+        transform: scale(0.95);
+
+        .article-ref__read-it {
+            text-decoration: underline;
+        }
+    }
+
+    &--myth {
+        &:hover {
+            //odpowiedzialne za background color
+            background: radial-gradient(90.37% 297.96% at 50% 50%, rgba(235, 235, 235, 0.39) 3.25%, rgba(164, 22, 26, 0.0819) 100%);
+        }
+
+        .article-ref__heading {
+            color: $confederate-red;
+        }
+    }
+
+    &--fact {
+        &:hover {
+            //odpowiedzialne za background color
+            background: radial-gradient(90.37% 297.96% at 50% 50%, rgba(235, 235, 235, 0.39) 3.25%, rgba(0, 112, 8, 0.0702) 100%);
+        }
+
+        .article-ref__heading {
+            color: $confederate-green;
+        }
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: initial;
+    }
+
+    &__description {
+        font-weight: 600;
+        font-size: initial;
+        color: $confederate-blue;
+    }
+
+    &__img {
+        width: 116px;
+        height: 116px;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+
+    &__read-it {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: $text-size-small;
+    }
+}
+
+.categories {
+    &__item {
+        height: 132px;
+        display: block;
+        color: $confederate-blue;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid #173358;
+        box-sizing: border-box;
+        box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 24px;
+        transition: 0.2s;
+
+        &:hover {
+            color: $confederate-blue;
+            text-decoration: none;
+            background: $confederate-blue;
+
+            .categories__item-heading {
+                color: $grey-1;
+            }
+
+            .fillStroke {
+                stroke: $grey-1;
+            }
+
+            .fillFill {
+                fill: $grey-1;
+            }
+
+
+
+        }
+
+        &-heading {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+            color: $confederate-blue;
+            transition: 0.2s;
+        }
+    }
+}
+
+.footer {
+    background-color: $confederate-blue-darker;
+
+    &__logo {
+        max-width: 300px;
+    }
+
+    &__links {
+        color: $grey-1;
+
+        .nav-item a {
+            font-size: $text-size-small;
+            line-height: 1.5rem;
+            position: relative;
+            display: inline-block;
+            margin-right: 1rem;
+            color: $grey-1;
+        }
+
+        .nav-item:not(:last-of-type) a::after {
+            content: '';
+            width: 1px;
+            border-right: 1px solid $grey-1;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            right: -0.5rem;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .articles__grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .article-ref {
+        padding: 1rem 0.5rem;
+
+        &__img {
+            max-width: 80px;
+            max-height: 80px;
+        }
+    }
+
+    .header {
+        &__heading:before {
+            width: 100%;
+        }
+
+        &__h1 {
+            font-size: initial;
+        }
+    }
+
+    .footer {
+        &__links {
+            .nav {
+                padding-top: 1rem;
+                border-top: 1px solid rgba(235, 235, 235, 0.39);
+            }
+
+            .nav-item {
+                line-height: 2.5rem;
+
+                a {
+                    margin-right: 0;
+                }
+            }
+
+            .nav-item:not(:last-of-type) a::after {
+                content: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width:992px) {
+    .articles__grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    h2,
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .article-ref {
+        padding: 1.5rem 1rem;
+    }
+
+    .search {
+        padding: 2rem 1rem;
+        width: 100%;
+
+        &__input {
+            width: 100%;
+        }
+    }
+}
