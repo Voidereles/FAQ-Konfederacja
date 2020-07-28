@@ -62,12 +62,11 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header id="header" class="header header--subpages">
+    <header id="header" class="header">
         <!-- logo - menu - wyszukiwarka na całość - kalendarz - dzwoneczek - nazwisko z dropdownem - avatar - zębatka -->
         <nav class="navbar">
             <div class="container-fluid d-flex flex-column">
-                <a class="navbar-brand active logo-container d-flex align-items-center justify-content-center w-100"
-                    href="#">
+                <a class="navbar-brand logo-container d-flex align-items-center justify-content-center w-100" href="#">
                     <img class="img-fluid header__logo p-1 py-lg-2 px-lg-0" src="images/Konfederacja.svg" alt="Logo">
                 </a>
 
@@ -137,20 +136,22 @@
 
             <section class="about">
                 <div class="row w-100 position-relative overflow-hidden">
-                    <div class="col-12 col-xl-4 mt-5 mx-3 mx-xl-0 pr-xl-5 text-center text-xl-left break-word">
+                    <div class="col-12 col-lg-4 mt-5 mx-3 mx-lg-0 pr-lg-5">
+                        <h4 class="d-lg-none">Poznaj naszą encyklopedię!</h4>
                         <p class="about__p wow fadeInDown">Masz dość kłócenia się wciąż o te same
-                            mity dotyczące
+                            <span class="text-red">mity</span> dotyczące
                             członków Konfederacji?
                         </p>
-                        <p class="about__p wow fadeInLeft" data-wow-delay="2.5s">Chcesz szybko poinformować swojego
-                            rozmówcę, że jego partia wcale nie
+                        <p class="about__p wow fadeInLeft" data-wow-delay="3s">Chcesz szybko poinformować swojego
+                            rozmówcę o <span class="text-green">fakcie</span>, że jego partia wcale nie
                             realizuje postulatów o których mówi, a jej geneza pozostawia wiele do życzenia?</p>
                         <p class="about__p wow fadeInLeft" data-wow-delay="4s">Pytają Cię o źródło?</p>
-                        <p class="about__p font-weight-bold wow fadeInUpBig" data-wow-delay="5s">Jesteś w dobrym
+                        <p class="about__p font-weight-bold wow fadeInLeft text-left" data-wow-delay="5s">Jesteś w
+                            dobrym
                             miejscu, pomożemy Ci!</p>
                     </div>
 
-                    <div class="about__image-outside d-xl-block wow slideInRight" data-wow-delay="1s">
+                    <div class="about__image-outside d-lg-block mt-5 wow slideInRight" data-wow-delay="1s">
                         <img class="img-fluid w-100" src="images/annoyed.jpg" alt="annoyed" />
                         <img class="img-fluid w-100" src="images/happy.webp" alt="happy" />
                     </div>
