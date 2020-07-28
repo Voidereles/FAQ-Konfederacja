@@ -390,6 +390,10 @@ h4 {
   padding-bottom: 4rem;
 }
 
+.search__hero-container .search__input {
+  width: 700px;
+}
+
 .main {
   background: #ededed;
 }
