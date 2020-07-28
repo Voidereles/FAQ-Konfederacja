@@ -785,9 +785,15 @@ h4 {
         }
     }
 
+
+    .article-page__number {
+        line-height: 1.85;
+    }
+
 }
 
 @media (max-width:765px) {
+
     .footer {
 
         &__links {
@@ -817,6 +823,7 @@ h4 {
         grid-template-columns: 1fr;
         max-width: 100%;
     }
+
 
     .article-ref {
         padding: 1rem 0.5rem;

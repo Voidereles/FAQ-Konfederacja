@@ -756,6 +756,9 @@ h4 {
   .about__image-outside {
     display: none;
   }
+  .article-page__number {
+    line-height: 1.85;
+  }
 }
 
 @media (max-width: 765px) {
