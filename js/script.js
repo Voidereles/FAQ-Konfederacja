@@ -60,9 +60,8 @@ $(document).ready(function () {
     }
 
     headerChangePlace();
-    if (window.innerWidth <= 992) {
-        headerOnScroll();
-    }
+    headerOnScroll();
+
 });
 
 

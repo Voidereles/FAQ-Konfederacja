@@ -168,6 +168,11 @@ h4 {
 
 .header--subpages {
     background-color: $confederate-blue-darker;
+    transition: 0.3s;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px -4px 3px 6px rgba(69, 63, 59, 0.2);
 
     .navbar {
         max-height: 60px;
@@ -757,11 +762,7 @@ h4 {
     }
 
     .header--subpages {
-        transition: 0.3s;
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-        box-shadow: 0px -4px 3px 6px rgba(69, 63, 59, 0.2);
+
 
         .navbar-collapse {
             background-color: $confederate-blue-darker;
