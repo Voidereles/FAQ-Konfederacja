@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" /> -->
+
+
+
+
+
+
+    <!-- <link href="bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css"
+    media="all"> -->
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+    <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"> -->
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.1.0/simplebar.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+    <link href="assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
+    <link rel="stylesheet" href="assets/animate.css">
+
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header id="headerSubpages" class="header--subpages">
+        <!-- logo - menu - wyszukiwarka na całość - kalendarz - dzwoneczek - nazwisko z dropdownem - avatar - zębatka -->
+        <nav class="navbar px-2 px-lg-4 py-0 d-flex justify-content-between w-100 align-items-center navbar-expand-lg">
+
+            <a class="navbar-brand mr-0 mr-md-2" href="#">
+                <img class="img-fluid p-1 py-lg-2 px-lg-0 d-none d-lg-inline-block" src="images/Konfederacja.svg"
+                    alt="Logo">
+                <img class="img-fluid p-1 py-lg-2 px-lg-0 d-lg-none" src="images/Konfederacja-logo.svg" alt="Logo">
+            </a>
+
+
+
+
+            <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                <div class="row mx-0 my-1 p-3 w-100 text-center text-lg-left d-flex justify-content-center">
+                    <!-- <span class="search__mobile-text">Szukaj</span> -->
+                    <input class="search__input" type="text" name="factOrMyth" id="" placeholder="Szukaj...">
+                    <button class="search__submit ml-3" type="submit"><svg width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.6636 15.6636C16.2494 15.0779 17.1992 15.0779 17.785 15.6636L23.5607 21.4393C24.1464 22.0251 24.1464 22.9749 23.5607 23.5607C22.9749 24.1464 22.0251 24.1464 21.4393 23.5607L15.6636 17.785C15.0779 17.1992 15.0779 16.2494 15.6636 15.6636Z"
+                                fill="#EDEDED" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.75 18C14.3063 18 18 14.3063 18 9.75C18 5.19365 14.3063 1.5 9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75C1.5 14.3063 5.19365 18 9.75 18ZM19.5 9.75C19.5 15.1348 15.1348 19.5 9.75 19.5C4.36522 19.5 0 15.1348 0 9.75C0 4.36522 4.36522 0 9.75 0C15.1348 0 19.5 4.36522 19.5 9.75Z"
+                                fill="#EDEDED" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <h1 class="header__h1 text-lg-right">
+                Encyklopedia mitów i faktów
+            </h1>
+
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="navbar__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <!-- <div class="header__heading">
+                    <h1 class="header__h1">
+                        Encyklopedia mitów i faktów
+                    </h1>
+                </div> -->
+
+            <!-- <div class="header__numbers d-flex">
+                    <div class="header__numbers-facts">
+                        <h5 class="header__numbers-title">Fakty</h5>
+                        <span class="header__numbers-number">121</span>
+                    </div>
+
+                    <div class="header__numbers-myths">
+                        <h5 class="header__numbers-title">Mity</h5>
+                        <span class="header__numbers-number">253</span>
+                    </div>
+                </div> -->
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div class="container py-5">
+
+
+            <section>
+
+
+                <div class="filters p-3">
+                    <div class="filters__heading">Kategorie</div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link filters__link active" href="#">Wszystkie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">Spoza Konfederacji</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">Członkowie Konfederacji</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">Postulaty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">Wydarzenia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">Inne</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filters p-3 my-3 ">
+                    <div class="filters__heading">Najpopularniejsze tagi</div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link filters__link active" href="#">Brak wybranych tagów</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">#Faszyzm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">#tvp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">#korwin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filters__link" href="#">#braun</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </section>
+
+            <section class="article-page">
+
+                <article class="article-page__article px-1 px-md-2 px-lg-4 px-xl-5">
+                    <!-- klasa text-green lub text-red nada kolor w zależności czy to mit czy fakt -->
+                    <div class="row mx-0">
+                        <h2 class="font-weight-bold mt-3 article-page__number text-green">Fakt nr 1</h2>
+                        <ul
+                            class="navbar-nav navbar-accessibility flex-row justify-content-around justify-content-lg-start ml-lg-auto mt-3">
+                            <li class="nav-item">
+                                <button class="nav-link btn btn-link article-page__print-btn" onclick="window.print()"
+                                    id="printBtn" data-toggle="tooltip" data-placement="bottom" title="Drukuj">
+                                    <svg width="20" height="20" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path
+                                                d="M25.9792 21.75H22.3542C22.0207 21.75 21.75 21.4793 21.75 21.1458C21.75 20.8123 22.0207 20.5417 22.3542 20.5417H25.9792C26.9785 20.5417 27.7917 19.7285 27.7917 18.7292V10.2708C27.7917 9.27154 26.9785 8.45833 25.9792 8.45833H3.02083C2.02154 8.45833 1.20833 9.27154 1.20833 10.2708V18.7292C1.20833 19.7285 2.02154 20.5417 3.02083 20.5417H6.64583C6.97933 20.5417 7.25 20.8123 7.25 21.1458C7.25 21.4793 6.97933 21.75 6.64583 21.75H3.02083C1.35454 21.75 0 20.3943 0 18.7292V10.2708C0 8.60575 1.35454 7.25 3.02083 7.25H25.9792C27.6455 7.25 29 8.60575 29 10.2708V18.7292C29 20.3943 27.6455 21.75 25.9792 21.75Z"
+                                                fill="black" />
+                                            <path
+                                                d="M17.5207 25.3748H10.2707C9.93717 25.3748 9.6665 25.1042 9.6665 24.7707C9.6665 24.4372 9.93717 24.1665 10.2707 24.1665H17.5207C17.8542 24.1665 18.1248 24.4372 18.1248 24.7707C18.1248 25.1042 17.8542 25.3748 17.5207 25.3748Z"
+                                                fill="black" />
+                                            <path
+                                                d="M17.5207 22.9583H10.2707C9.93717 22.9583 9.6665 22.6877 9.6665 22.3542C9.6665 22.0207 9.93717 21.75 10.2707 21.75H17.5207C17.8542 21.75 18.1248 22.0207 18.1248 22.3542C18.1248 22.6877 17.8542 22.9583 17.5207 22.9583Z"
+                                                fill="black" />
+                                            <path
+                                                d="M12.6873 20.5416H10.2707C9.93717 20.5416 9.6665 20.2709 9.6665 19.9374C9.6665 19.6039 9.93717 19.3333 10.2707 19.3333H12.6873C13.0208 19.3333 13.2915 19.6039 13.2915 19.9374C13.2915 20.2709 13.0208 20.5416 12.6873 20.5416Z"
+                                                fill="black" />
+                                            <path
+                                                d="M22.354 8.45833C22.0205 8.45833 21.7498 8.18767 21.7498 7.85417V3.02083C21.7498 2.02154 20.9366 1.20833 19.9373 1.20833H9.06234C8.06305 1.20833 7.24984 2.02154 7.24984 3.02083V7.85417C7.24984 8.18767 6.97917 8.45833 6.64567 8.45833C6.31217 8.45833 6.0415 8.18767 6.0415 7.85417V3.02083C6.0415 1.35575 7.39605 0 9.06234 0H19.9373C21.6036 0 22.9582 1.35575 22.9582 3.02083V7.85417C22.9582 8.18767 22.6875 8.45833 22.354 8.45833Z"
+                                                fill="black" />
+                                            <path
+                                                d="M19.9373 28.9999H9.06234C7.39605 28.9999 6.0415 27.6442 6.0415 25.9791V16.3124C6.0415 15.9789 6.31217 15.7083 6.64567 15.7083H22.354C22.6875 15.7083 22.9582 15.9789 22.9582 16.3124V25.9791C22.9582 27.6442 21.6036 28.9999 19.9373 28.9999ZM7.24984 16.9166V25.9791C7.24984 26.9784 8.06305 27.7916 9.06234 27.7916H19.9373C20.9366 27.7916 21.7498 26.9784 21.7498 25.9791V16.9166H7.24984Z"
+                                                fill="black" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="29" height="29" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="makeFontSmaller" class="nav-link btn btn-link" data-toggle="tooltip"
+                                    data-placement="bottom" title="Zmniejsz czcionkę">
+                                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.954 9.634H2.934L1.422 13H0.036L5.796 0.399999H7.11L12.87 13H11.466L9.954 9.634ZM9.468 8.554L6.444 1.786L3.42 8.554H9.468ZM15.1187 7.564H19.8347V8.68H15.1187V7.564Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button id="makeFontBigger" class="nav-link btn btn-link" data-toggle="tooltip"
+                                    data-placement="bottom" title="Zwiększ czcionkę">
+                                    <svg width="24" height="13" viewBox="0 0 24 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.954 9.634H2.934L1.422 13H0.036L5.796 0.399999H7.11L12.87 13H11.466L9.954 9.634ZM9.468 8.554L6.444 1.786L3.42 8.554H9.468ZM23.1287 7.24H19.7807V10.516H18.6467V7.24H15.2987V6.178H18.6467V2.884H19.7807V6.178H23.1287V7.24Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button id="highContrastBtn" class="nav-link btn btn-link" data-toggle="tooltip"
+                                    data-placement="bottom" title="Zmień kontrast na wysoki">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9 16.875C9 16.875 9 13.3492 9 9V1.125C4.65076 1.125 1.125 4.65076 1.125 9C1.125 13.3492 4.65076 16.875 9 16.875ZM9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="article-page__last-update">Ostatnia aktualizacja: 22.07.2020</div>
+                    <h1 class="article-page__title">Korwin to Lorem Ipsum Dolor?</h1>
+                    <p class="article-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+                        possimus error dicta laudantium laboriosam! Ad, magni tenetur explicabo est suscipit praesentium
+                        nisi eos maiores quam? Iste vitae eaque amet.
+                        Soluta maxime repellendus recusandae voluptatibus praesentium tempora quaerat libero! Iste
+                        minima possimus, voluptatum architecto dolore consequuntur quae molestiae ratione autem qui
+                        eligendi magni? Quia veniam quisquam unde quod, hic dolores.
+                        Veritatis, assumenda? Repudiandae dolorum vel, assumenda quidem ex necessitatibus tempora omnis
+                        quam iure debitis eius consequatur officiis vero natus magni impedit veritatis. Dolores autem
+                        expedita dicta. Officiis illum neque similique?</p>
+                    <img src="images/korwin.jpg" alt="Korwin">
+                    <p class="article-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+                        possimus error dicta laudantium laboriosam! Ad, magni tenetur explicabo est suscipit praesentium
+                        nisi eos maiores quam? Iste vitae eaque amet.
+                        Soluta maxime repellendus recusandae voluptatibus praesentium tempora quaerat libero! Iste
+                        minima possimus, voluptatum architecto dolore consequuntur quae molestiae ratione autem qui
+                        eligendi magni? Quia veniam quisquam unde quod, hic dolores.
+                        Veritatis, assumenda? Repudiandae dolorum vel, assumenda quidem ex necessitatibus tempora omnis
+                        quam iure debitis eius consequatur officiis vero natus magni impedit veritatis. Dolores autem
+                        expedita dicta. Officiis illum neque similique?</p>
+
+                    <p class="article-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+                        possimus error dicta laudantium laboriosam! Ad, magni tenetur explicabo est suscipit praesentium
+                        nisi eos maiores quam? Iste vitae eaque amet.
+                        Soluta maxime repellendus recusandae voluptatibus praesentium tempora quaerat libero! Iste
+                        minima possimus, voluptatum architecto dolore consequuntur quae molestiae ratione autem qui
+                        eligendi magni? Quia veniam quisquam unde quod, hic dolores.
+                        Veritatis, assumenda? Repudiandae dolorum vel, assumenda quidem ex necessitatibus tempora omnis
+                        quam iure debitis eius consequatur officiis vero natus magni impedit veritatis. Dolores autem
+                        expedita dicta. Officiis illum neque similique?</p>
+                    <img src="images/korwin.jpg" alt="Korwin">
+                    <ul>
+                        <li>Something</li>
+                        <li>Something</li>
+                        <li>Something</li>
+                        <li>Something</li>
+                        <li>Something</li>
+                    </ul>
+
+                    <p class="article-page__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
+                        possimus error dicta laudantium laboriosam! Ad, magni tenetur explicabo est suscipit praesentium
+                        nisi eos maiores quam? Iste vitae eaque amet.
+                        Soluta maxime repellendus recusandae voluptatibus praesentium tempora quaerat libero! Iste
+                        minima possimus, voluptatum architecto dolore consequuntur quae molestiae ratione autem qui
+                        eligendi magni? Quia veniam quisquam unde quod, hic dolores.
+                        Veritatis, assumenda? Repudiandae dolorum vel, assumenda quidem ex necessitatibus tempora omnis
+                        quam iure debitis eius consequatur officiis vero natus magni impedit veritatis. Dolores autem
+                        expedita dicta. Officiis illum neque similique?</p>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+
+
+    <footer class="footer py-5">
+        <div class="container-fluid">
+            <div class="row flex-column flex-lg-row align-items-center mx-0">
+                <img class="footer__logo" src="images/Konfederacja.svg" alt="logo">
+                <div class="footer__links my-4 my-lg-0 ml-lg-5">
+                    <p>Wszelkie prawa zastrzeżone.</p>
+
+                    <ul class="nav d-flex flex-column flex-md-row text-center text-md-left">
+                        <li class="nav-item">
+                            <a class="" href="https://konfederacja.net/" target="_blank">Strona główna Konfederacji</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.1.0/simplebar.min.js"></script>
+
+
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <script src="bootstrap-touchspin-master/src/jquery.bootstrap-touchspin.js"></script>
+
+    <script src="assets/wow.min.js"></script>
+
+
+    <script src="js/script.js" async defer></script>
+
+</body>
+
+</html>

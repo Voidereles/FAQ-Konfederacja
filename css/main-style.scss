@@ -19,6 +19,33 @@ body {
     background-color: $confederate-blue-darker;
 }
 
+.high-contrast {
+    .main {
+        background: rgba(0, 0, 0, 0.95);
+    }
+
+    article {
+        background-color: rgba(0, 0, 0, 0.95);
+
+        color: $grey-1;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: $grey-1;
+        }
+
+        svg path {
+            fill: $grey-1;
+        }
+
+    }
+}
+
 h2,
 h4 {
     font-size: $text-size-huge-2;
@@ -32,11 +59,11 @@ h4 {
 }
 
 .text-red {
-    color: $confederate-red;
+    color: $confederate-red !important;
 }
 
 .text-green {
-    color: $confederate-green;
+    color: $confederate-green !important;
 }
 
 .text-blue {
@@ -578,6 +605,87 @@ h4 {
     }
 }
 
+.article-page {
+
+    &__article {
+        background: rgba(235, 235, 235, 0.9);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 24px;
+        text-align: center;
+    }
+
+    &__number {
+        font-weight: bold;
+        color: $confederate-blue-darker;
+    }
+
+    &__last-update {
+        color: rgba(186, 185, 185, 0.9);
+        text-transform: uppercase;
+        font-size: $text-size-small;
+        text-align: left;
+    }
+
+    &__title {
+        color: $confederate-blue-darker;
+        font-weight: 700;
+    }
+
+    .nav-item {
+        margin-left: 1.5rem;
+
+        .nav-link {
+            svg {
+                transition: 0.2s;
+            }
+
+            &:hover {
+                svg {
+                    transform: scale(1.1);
+                }
+
+                svg path {
+                    fill: $confederate-blue;
+                }
+            }
+
+            &:active {
+                svg {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.5rem;
+        color: rgba(0, 0, 0, 0.8);
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-font-smoothing: antialiased !important;
+        text-rendering: optimizelegibility !important;
+        letter-spacing: .03rem;
+    }
+
+    img {
+        max-height: 50vh;
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    ul,
+    ol,
+    textarea,
+    input,
+    li,
+    a,
+    div {
+        text-align: justify;
+    }
+
+}
+
 .footer {
     background-color: $confederate-blue-darker;
 
@@ -747,5 +855,27 @@ h4 {
 
     .articles__grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    article,
+    article * {
+        visibility: visible;
+    }
+
+    article {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .navbar-accessibility * {
+        visibility: hidden;
     }
 }
