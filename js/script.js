@@ -23,4 +23,4 @@ $(".owl-categories").owlCarousel({
     }
 });
 
-$('.img-fluid').css('transform', 'translateY(-100%)');
+$('.about .img-fluid').css('transform', 'translateY(-100%)');
