@@ -3,16 +3,16 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="pl">
 <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>FAQ-Konfederacja</title>
+    <meta name="description" content="Mity i fakty o polityce">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="theme-color" content="#173358" />
 
 
 
@@ -22,37 +22,20 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" /> -->
 
-
-
-
-
-
-    <!-- <link href="bootstrap-touchspin-master/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css"
-    media="all"> -->
-
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-
-    <!-- <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"> -->
 
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.1.0/simplebar.min.css">
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
 
 
 
     <link href="assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
     <link rel="stylesheet" href="assets/animate.css">
 
     <link rel="stylesheet" href="css/main-style.css">
@@ -65,21 +48,11 @@
     <header id="header" class="header">
         <!-- logo - menu - wyszukiwarka na całość - kalendarz - dzwoneczek - nazwisko z dropdownem - avatar - zębatka -->
         <nav class="navbar">
-            <div class="container-fluid d-flex flex-column">
+            <div class="container-fluid d-flex flex-column align-content-center px-0">
                 <a class="navbar-brand logo-container d-flex align-items-center justify-content-center w-100" href="#">
                     <img class="img-fluid header__logo p-1 py-lg-2 px-lg-0" src="images/Konfederacja.svg" alt="Logo">
                 </a>
 
-                <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <div class="navbar__burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button> -->
 
                 <div class="header__heading">
                     <h1 class="header__h1">
@@ -89,12 +62,12 @@
 
                 <div class="header__numbers d-flex">
                     <div class="header__numbers-facts">
-                        <h5 class="header__numbers-title">Fakty</h5>
+                        <h2 class="header__numbers-title">Fakty</h2>
                         <span class="header__numbers-number">121</span>
                     </div>
 
                     <div class="header__numbers-myths">
-                        <h5 class="header__numbers-title">Mity</h5>
+                        <h2 class="header__numbers-title">Mity</h2>
                         <span class="header__numbers-number">253</span>
                     </div>
                 </div>
@@ -107,11 +80,12 @@
     <div class="search__hero-container">
         <div class="container d-flex justify-content-center px-md-0">
             <div class="search">
-                <h3 class="search__heading">Wyszukaj fakty i mity</h3>
+                <label for="searchInput" class="search__heading">Wyszukaj fakty i mity</label>
                 <div class="row mx-0 mt-4 mb-3">
-                    <input class="search__input" type="search" name="factOrMyth" id="" placeholder="Szukaj...">
+                    <input id="searchInput" class="search__input" type="search" name="search__input" id=""
+                        placeholder="Szukaj...">
                     <button class="search__submit ml-3" type="submit"><svg width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            aria-label="search submit" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M15.6636 15.6636C16.2494 15.0779 17.1992 15.0779 17.785 15.6636L23.5607 21.4393C24.1464 22.0251 24.1464 22.9749 23.5607 23.5607C22.9749 24.1464 22.0251 24.1464 21.4393 23.5607L15.6636 17.785C15.0779 17.1992 15.0779 16.2494 15.6636 15.6636Z"
                                 fill="#EDEDED" />
@@ -137,7 +111,7 @@
             <section class="about">
                 <div class="row w-100 position-relative overflow-hidden">
                     <div class="col-12 col-lg-4 mt-5 mx-3 mx-lg-0 pr-lg-5">
-                        <h4 class="d-lg-none">Poznaj naszą encyklopedię!</h4>
+                        <h3 class="d-lg-none">Poznaj naszą encyklopedię!</h3>
                         <p class="about__p wow fadeInDown">Masz dość kłócenia się wciąż o te same
                             <span class="text-red">mity</span> dotyczące
                             członków Konfederacji?
@@ -168,7 +142,7 @@
                     <a class="article-ref" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading--fact">Fakt nr 1</h6>
+                                <span class="article-ref__heading article-ref__heading--fact">Fakt nr 1</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -195,7 +169,7 @@
                     <a class="article-ref" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading--fact">Fakt nr 1</h6>
+                                <span class="article-ref__heading article-ref__heading--fact">Fakt nr 1</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -222,7 +196,7 @@
                     <a class="article-ref" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading--myth">Mit nr 1</h6>
+                                <span class="article-ref__heading article-ref__heading--myth">Mit nr 1</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -249,7 +223,7 @@
                     <a class="article-ref article-ref--fact" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading--fact">Fakt nr 1</h6>
+                                <span class="article-ref__heading article-ref__heading--fact">Fakt nr 1</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -276,7 +250,7 @@
                     <a class="article-ref article-ref--myth" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading">Mit nr 2</h6>
+                                <span class="article-ref__heading article-ref__heading">Mit nr 2</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -303,7 +277,7 @@
                     <a class="article-ref" href="#">
                         <div class="row mx-0 justify-content-between">
                             <div class="article-ref__text col-8 col-md-7">
-                                <h6 class="article-ref__heading article-ref__heading--fact">Fakt nr 1</h6>
+                                <span class="article-ref__heading article-ref__heading--fact">Fakt nr 1</span>
                                 <p class="article-ref__description">Lorem ipsum dolor sit amet</p>
                             </div>
                             <div class="col-4 col-md-5 text-right pr-0">
@@ -329,7 +303,7 @@
 
                 </div>
                 <a class="new-articles__read-all row mx-0 align-items-center justify-content-end my-5" href="#">
-                    <h4 class="mb-0 mr-2">Zobacz wszystkie</h4>
+                    <h3 class="mb-0 mr-2">Zobacz wszystkie</h3>
                     <svg width="29" height="26" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M5.16315 3.56095C5.38333 3.78113 5.38333 4.1381 5.16315 4.35828L2.17901 7.34243L5.16315 10.3266C5.38333 10.5467 5.38333 10.9037 5.16315 11.1239C4.94298 11.3441 4.586 11.3441 4.36582 11.1239L0.983005 7.7411C0.762826 7.52092 0.762826 7.16394 0.983005 6.94376L4.36582 3.56095C4.586 3.34077 4.94298 3.34077 5.16315 3.56095Z"
@@ -377,7 +351,7 @@
                                 </filter>
                             </defs>
                         </svg>
-                        <h6 class="categories__item-heading p-2">Spoza Konfederacji</h6>
+                        <span class="categories__item-heading p-2">Spoza Konfederacji</span>
                     </a>
 
                     <a class="categories__item" href="#">
@@ -405,7 +379,7 @@
                             </defs>
                         </svg>
 
-                        <h6 class="categories__item-heading p-2">Postulaty</h6>
+                        <span class="categories__item-heading p-2">Postulaty</span>
                     </a>
 
                     <a class="categories__item" href="#">
@@ -445,7 +419,7 @@
 
 
 
-                        <h6 class="categories__item-heading p-2">Członkowie Konfederacji</h6>
+                        <span class="categories__item-heading p-2">Członkowie Konfederacji</span>
                     </a>
 
                     <a class="categories__item" href="#">
@@ -488,7 +462,7 @@
 
 
 
-                        <h6 class="categories__item-heading p-2">Wydarzenia</h6>
+                        <span class="categories__item-heading p-2">Wydarzenia</span>
                     </a>
 
 
@@ -511,7 +485,8 @@
 
                     <ul class="nav d-flex flex-column flex-md-row text-center text-md-left">
                         <li class="nav-item">
-                            <a class="" href="https://konfederacja.net/" target="_blank">Strona główna Konfederacji</a>
+                            <a class="" href="https://konfederacja.net/" rel="noopener" target="_blank">Strona główna
+                                Konfederacji</a>
                         </li>
                         <li class="nav-item">
                             <a class="" href="#">Link</a>
@@ -531,38 +506,27 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        async defer>
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="assets/owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js">
-    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
-        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"
+        async defer>
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.1.0/simplebar.min.js"></script>
 
 
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
-    <script src="bootstrap-touchspin-master/src/jquery.bootstrap-touchspin.js"></script>
-
-    <script src="assets/wow.min.js"></script>
+    <script src="assets/wow.min.js" async defer></script>
 
 
     <script src="js/script.js" async defer></script>
+    <script src="js/about-script.js" async defer></script>
 
 </body>
 

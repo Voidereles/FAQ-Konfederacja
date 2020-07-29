@@ -28,13 +28,14 @@ body {
 }
 
 h2,
-h4 {
-  font-size: 4rem;
+h3 {
+  font-size: 3rem;
   color: #0B213D;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+h3,
 h4 {
   font-size: 1.5rem;
 }
@@ -61,7 +62,7 @@ h4 {
 }
 
 .header {
-  background-image: url("../images/people-konf 1.jpg");
+  background-image: url("../images/people.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -149,6 +150,8 @@ h4 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0;
+  color: #ededed;
+  font-size: 1.5rem;
 }
 
 .header__numbers-number {
@@ -496,6 +499,7 @@ h4 {
 .article-ref__heading {
   font-weight: 700;
   font-size: initial;
+  display: block;
 }
 
 .article-ref__description {
@@ -610,6 +614,7 @@ h4 {
   color: #173358;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  display: block;
 }
 
 .article-page__article {

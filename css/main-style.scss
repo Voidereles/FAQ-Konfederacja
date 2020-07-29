@@ -47,13 +47,15 @@ body {
 }
 
 h2,
-h4 {
-    font-size: $text-size-huge-2;
+h3 {
+    font-size: $text-size-huge;
     color: $confederate-blue-darker;
     font-weight: bold;
     text-transform: uppercase;
 }
 
+
+h3,
 h4 {
     font-size: $text-size-big-2;
 }
@@ -80,7 +82,7 @@ h4 {
 }
 
 .header {
-    background-image: url('../images/people-konf\ 1.jpg');
+    background-image: url('../images/people.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -154,6 +156,8 @@ h4 {
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: 0;
+            color: $grey-1;
+            font-size: $text-size-big-2;
         }
 
         &-number {
@@ -504,6 +508,7 @@ h4 {
     &__heading {
         font-weight: 700;
         font-size: initial;
+        display: block;
     }
 
     &__description {
@@ -610,6 +615,7 @@ h4 {
             font-family: 'Oswald', sans-serif;
             color: $confederate-blue;
             transition: 0.2s;
+            display: block;
         }
     }
 }
